@@ -2,7 +2,7 @@ import { PortfolioData } from '../types';
 
 export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
   profile: {
-    name: "Samandar (Dev Vibe)",
+    name: "Tursunboy (Dev Vibe)",
     age: 14,
     roleTitle: "Backend Dasturchi & Frontend Vibe Coder",
     roleSubtitle: "Tezkor, toza va hamyonbop dasturlash yechimlari",
@@ -13,8 +13,8 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
     phone: "+998 90 123 45 67",
     email: "vibe.coder.14@gmail.com",
-    telegram: "@samandar_vibe",
-    github: "https://github.com/samandar-dev-14",
+    telegram: "@PythonTTT",
+    github: "https://github.com/tursunboy-dev-14",
     location: "Toshkent, O'zbekiston",
     hourlyRate: 8,
     discountText: "Bozor narxidan 50% arzonroq narxlar!",
@@ -124,7 +124,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=900&q=80",
       techStack: ["Django REST", "PostgreSQL", "React", "Tailwind CSS", "Payme API"],
       demoUrl: "https://example.com/demo-shop",
-      githubUrl: "https://github.com/samandar-dev-14/django-shop-api",
+      githubUrl: "https://github.com/tursunboy-dev-14/django-shop-api",
       priceEstimate: "$50 (bozorda $200+)",
       features: ["JWT Auth", "Click/Payme Integratsiya", "Real-time buyurtma ogohlantirish", "Dashboard statistika"],
       featured: true,
@@ -139,7 +139,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       image: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=900&q=80",
       techStack: ["Python", "Aiogram 3", "Redis", "PostgreSQL", "Docker"],
       demoUrl: "https://t.me/example_demo_bot",
-      githubUrl: "https://github.com/samandar-dev-14/aiogram-crm-bot",
+      githubUrl: "https://github.com/tursunboy-dev-14/aiogram-crm-bot",
       priceEstimate: "$35 (bozorda $120+)",
       features: ["Inline knopkalar", "Excel hisobotlar", "Admin eshittirish (broadcast)", "Keshlashtirish"],
       featured: true,
@@ -154,7 +154,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=900&q=80",
       techStack: ["FastAPI", "AsyncPG", "Redis", "Docker-Compose", "Celery"],
       demoUrl: "https://example.com/api/docs",
-      githubUrl: "https://github.com/samandar-dev-14/fastapi-logistics",
+      githubUrl: "https://github.com/tursunboy-dev-14/fastapi-logistics",
       priceEstimate: "$60 (bozorda $250+)",
       features: ["Async WebSocket GPS", "Swagger API Docs", "Rate Limiting", "JWT Role Access"],
       featured: true,
@@ -169,7 +169,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=900&q=80",
       techStack: ["React 19", "Tailwind CSS v4", "Motion", "Canvas", "Lucide Icons"],
       demoUrl: "https://example.com/vibe-landing",
-      githubUrl: "https://github.com/samandar-dev-14/vibe-portfolio",
+      githubUrl: "https://github.com/tursunboy-dev-14/vibe-portfolio",
       priceEstimate: "$30 (bozorda $100+)",
       features: ["Shaffof Glassmorphism", "Jonli orqa fon animatsiyasi", "Moslashuvchan (Mobile first)", "SEO Friendly"],
       featured: false,
@@ -239,14 +239,14 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
   ],
   messages: [
     {
-      id: "msg-1",
-      senderName: "Akmal Rustamov",
-      senderContact: "+998 90 999 88 77 (Telegram)",
-      projectType: "Telegram Savdo Boti",
-      budget: "$40",
-      message: "Salom Samandar! Bizning kiyim do'konimiz uchun buyurtma qabul qiluvchi bot kerak edi. Narxlaring juda ma'qul keldi!",
-      date: "Kecha, 18:40",
-      read: true
+      "id": "msg-1",
+      "senderName": "Akmal Rustamov",
+      "senderContact": "+998 90 999 88 77 (Telegram)",
+      "projectType": "Telegram Savdo Boti",
+      "budget": "$40",
+      "message": "Salom Tursunboy! Bizning kiyim do'konimiz uchun buyurtma qabul qiluvchi bot kerak edi. Narxlaring juda ma'qul keldi!",
+      "date": "Kecha, 18:40",
+      "read": true
     }
   ]
 };
