@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Syne', 'Space Grotesk', 'Outfit', sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Natural Tones Glassmorphism tokens */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.35);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(250, 204, 21, 0.4);
+  box-shadow: 0 20px 35px -10px rgba(250, 204, 21, 0.15);
+  transform: translateY(-3px);
+}
+
+.glass-input {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  border-color: rgba(250, 204, 21, 0.7);
+  box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.25);
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Sunset & Landscape Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes cloud-drift-1 {
+  0% { transform: translateX(-150px); }
+  100% { transform: translateX(calc(100vw + 150px)); }
+}
+
+@keyframes cloud-drift-2 {
+  0% { transform: translateX(-200px); }
+  100% { transform: translateX(calc(100vw + 200px)); }
+}
+
+@keyframes sun-glow {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 45px #facc15) drop-shadow(0 0 90px #f43f5e); }
+  50% { transform: scale(1.06); filter: drop-shadow(0 0 65px #fde047) drop-shadow(0 0 130px #fb7185); }
+}
+
+@keyframes sway-slow {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(2.5deg); }
+}
+
+@keyframes sway-alt {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-2deg); }
+}
+
+@keyframes bird-flap {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.4); }
+}
+
+@keyframes firefly-rise {
+  0% { transform: translateY(100vh) translateX(0) scale(0.5); opacity: 0; }
+  20% { opacity: 0.85; }
+  80% { opacity: 0.95; }
+  100% { transform: translateY(-20px) translateX(60px) scale(1.2); opacity: 0; }
+}
+
+@keyframes snowfall {
+  0% { transform: translateY(-20px) translateX(0px) rotate(0deg); opacity: 0; }
+  15% { opacity: 0.9; }
+  85% { opacity: 0.8; }
+  100% { transform: translateY(105vh) translateX(50px) rotate(360deg); opacity: 0; }
+}
+
+@keyframes sand-drift {
+  0% { transform: translateX(-50px) translateY(10px) scale(0.8); opacity: 0; }
+  20% { opacity: 0.7; }
+  80% { opacity: 0.6; }
+  100% { transform: translateX(110vw) translateY(-40px) scale(1.1); opacity: 0; }
+}
+
+@keyframes aurora-wave {
+  0%, 100% { transform: scaleY(1) skewX(0deg); opacity: 0.45; }
+  50% { transform: scaleY(1.3) skewX(4deg); opacity: 0.75; }
+}
+
+/* Blood Drip Animations */
+@keyframes blood-drip-flow {
+  0% { transform: translateY(0); opacity: 0.8; }
+  50% { transform: translateY(2px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.8; }
+}
+
+@keyframes blood-stretch {
+  0% { transform: scaleY(0.2); transform-origin: top; opacity: 0.6; }
+  35% { transform: scaleY(1); transform-origin: top; opacity: 1; }
+  70% { transform: scaleY(1.1); transform-origin: top; opacity: 0.9; }
+  100% { transform: scaleY(0.2); transform-origin: top; opacity: 0.6; }
+}
+
+@keyframes blood-drop-fall {
+  0% { transform: translateY(0) scale(0.8); opacity: 0; }
+  40% { transform: translateY(15px) scale(1); opacity: 1; }
+  80% { transform: translateY(55px) scale(1.1); opacity: 0.9; }
+  95% { transform: translateY(70px) scale(1.4, 0.4); opacity: 0.6; }
+  100% { transform: translateY(75px) scale(1.8, 0.2); opacity: 0; }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 0.3; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-sun-glow {
+  animation: sun-glow 8s ease-in-out infinite;
+}
+
+.animate-sway-slow {
+  transform-origin: bottom center;
+  animation: sway-slow 7s ease-in-out infinite;
+}
+
+.animate-sway-alt {
+  transform-origin: bottom center;
+  animation: sway-alt 9s ease-in-out infinite;
+}
+
+.animate-bird-wing {
+  animation: bird-flap 0.6s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom Natural Tones scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.85);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(250, 204, 21, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(250, 204, 21, 0.7);
+}
